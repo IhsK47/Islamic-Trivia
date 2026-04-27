@@ -31,12 +31,13 @@ Nav
 - flex
 
 1. Start page
-1b. Select difficulty: Easy Medium Hard
+1b. Select difficulty: Easy Medium Hard in a 3x1 grid
 
 2. Questions
-- questions
-- options in grid, 2x2 for mobile, 4x1 for desktop
-- form for difficult questions?
+- h2 question
+- divs of options in big div grid, 2x2 for mobile, 4x1 for desktop
+- input for difficult questions?
+- mouse click to options group
 
 3. Answers
 - not given or only upon request at the end of completion
@@ -48,9 +49,23 @@ Nav
 - timer to show time left to answer
 - possibly usage of time module
 
+Program Flow:
 
+Start Page
+- mouse click for difficulty
+    - sends level data
+    - loads questions
+    - changes display to questions with grid 
 
+For len, questions array: divs = question
+- mouse click to option
+    - check isCorrect
+    - runs answerCheck ()
+        if correct: increment score
+    - edit question and options text to next question
 
+Exit loop, display score, calc and display percentage and which questions answered wrongly
+- refresh button
 
 
 Backend
