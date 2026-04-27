@@ -1,3 +1,8 @@
+https://github.com/IhsK47/Islamic-Trivia
+
+
+inspo: https://github.com/jakealistairwood/js-quiz
+
 Reqs:
 - JS, scss
 - clear plan
@@ -10,9 +15,15 @@ GitHub Pages
 
 Readability: var names, func/oo
 
-Or Islamic Trivia 
+next commit:
+finish media queries
 
-inspo: https://github.com/jakealistairwood/js-quiz
+next^2:
+html nav
+
+
+Islamic Trivia 
+
 
 Nav
 - h1: "Barries Quiz"
