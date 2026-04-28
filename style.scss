@@ -1,9 +1,15 @@
 $mobile: 320px;  //how to typically determine this?
-
 $desktop: 1080px;
 
-@mixin mobile {
 
+$background-color: rgb(255,214,10);
+$text-colour: whitesmoke;
+
+
+@mixin mobile {
+    @media (max-width: $desktop)   { 
+        @content
+    }
 }
 
 
@@ -13,9 +19,51 @@ $desktop: 1080px;
 
 
 html {
+ font-family: sans-serif;
+}
 
+nav {
+    display: inline;
+    justify-content: end;
+    align-items: center;
+}
+
+
+#q-section {
+    display: flex;
+    height: 30vh; 
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid coral;
 }
 
 h2 {
+    text-align: center;
     
+}
+
+.optionsGrid {
+    
+    height: 50vh;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 2px solid cyan;
+
+    @include mobile {
+        grid-template-columns: repeat(2,1fr); //tb checked
+    }
+
+}
+
+#grids .btn {
+    border-radius: 10%;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.difficultyBtn { //not higher specificity
+    height: 30px;
+    border-radius: 50%;
 }

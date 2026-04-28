@@ -8,7 +8,24 @@ Players can select the option they feel correct and at the end will have their s
 
 ## HTML
 
+- [] nav
+    - [] h1: barries quiz
+    - [] refresh
+- [] question
+- [] 
+- []
+- []
 
 ## scss
 
+- [] font
+- [] question
+- []
+- []
+
 ## JS
+
+- [] questions store
+- []
+- []
+- []

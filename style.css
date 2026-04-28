@@ -1,0 +1,44 @@
+html {
+  font-family: sans-serif;
+}
+
+nav {
+  display: inline;
+  justify-content: end;
+  align-items: center;
+}
+
+#q-section {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid coral;
+}
+
+h2 {
+  text-align: center;
+}
+
+.optionsGrid {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid cyan;
+}
+@media (max-width: 1080px) {
+  .optionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#grids .btn {
+  border-radius: 10%;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.difficultyBtn {
+  height: 30px;
+  border-radius: 50%;
+}
