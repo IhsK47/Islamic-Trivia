@@ -20,6 +20,12 @@ h2 {
   text-align: center;
 }
 
+.difficultyGrid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lime;
+}
+
 .optionsGrid {
   height: 50vh;
   display: grid;
@@ -32,13 +38,21 @@ h2 {
   }
 }
 
-#grids .btn {
-  border-radius: 10%;
+.difficultyBtn {
+  height: 40px;
+  border-radius: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.grids button {
   margin: 10px;
   font-size: 20px;
 }
 
-.difficultyBtn {
-  height: 30px;
-  border-radius: 50%;
+.option {
+  border-radius: 5%;
+  max-width: 40vw;
 }

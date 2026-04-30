@@ -12,20 +12,23 @@ Players can select the option they feel correct and at the end will have their s
     - [] h1: barries quiz
     - [] refresh
 - [] question
-- [] 
-- []
+- [] optionsGrid
+- [] optionsButton
 - []
 
 ## scss
 
 - [] font
 - [] question
-- []
-- []
+- [] diffGrid to disspear after selection
+- [] 
 
 ## JS
 
-- [] questions store
-- []
-- []
-- []
+- [] create questions
+- [] export questions
+- [] import questions.js
+- [] difficulty selection
+- [] edit innerTHML on question
+- [] determine true or false and update 
+- [] calculate final score
