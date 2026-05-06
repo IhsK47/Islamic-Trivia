@@ -35,14 +35,12 @@ h2 {
 .difficultyGrid {
   display: flex;
   flex-direction: column;
-  border: 1px solid lime;
 }
 
 .optionsGrid {
   height: 50vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 2px solid cyan;
 }
 @media (max-width: 1080px) {
   .optionsGrid {

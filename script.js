@@ -10,6 +10,8 @@ let score = 0;
 let level;
 let choice;
 let isCorrect;
+let timerID
+let questionCounter = 0
 
 const handleDifficultySelection = (choice) => {
   if (choice == "Islam (Easy)") {
@@ -47,18 +49,9 @@ const mainquiz = async (selectedLevel) => {
   let quizset = pickRandomQuestions(selectedLevel);
   
   
-  let questionCounter = 0
-  render(quizset[questionCounter])
   
-  let a = quizset[questionCounter].answer;
-  console.log('a is ', a);
-
-
-  timerElement.addEventListener ('', ()=> {  //not entirely sure how works idk
-    if (timerElement.innerText==0)  {
-    isCorrect=false
-    processAnswer(isCorrect) }
-  } )
+  
+  let a = doNextQuestion ( quizset, questionCounter )
 
 
   options.forEach((option) => {
@@ -84,11 +77,7 @@ const mainquiz = async (selectedLevel) => {
       questionCounter++
 
       if (questionCounter < quizset.length) {
-        let q = quizset [questionCounter]
-        a = q.answer;
-        render(q)
-        console.log('a has changed to ', a);
-        
+        a = doNextQuestion (quizset, questionCounter)    
       }
       else {
         displayResults(score, quizset.length)
@@ -138,9 +127,19 @@ const render = (q) => {
     options[i].innerText = choices[i];
   }
 
-  countdown ()
 
 };
+
+const doNextQuestion = (quizset,questionCounter) => {
+  
+  let q = quizset[questionCounter]
+  render(q)
+  countdown (quizset,questionCounter)
+  let a = q.answer;
+  console.log('a has changed to ', a);
+  return a
+}
+
 
 const handlechoiceSelection = (choice, a) => {
   return (choice ===  a) ? true : false
@@ -158,7 +157,7 @@ const waitForAnswer = (currentQ) => {
    });
 };
 
-const processAnswer = (isCorrect) => {
+const processAnswer = async (isCorrect) => {
       if (isCorrect) {
         // render button green 
         score++; //or score =+ 1
@@ -167,34 +166,32 @@ const processAnswer = (isCorrect) => {
         // render button red 
       }
       
-      //                #buggy       countdown('clear')
-      //clearInterval(timerID)
+      clearInterval(timerID) //stops firing with the parameter of who will stop firing
       //disable buttons or freeze whole ui
-      //sleep(5);
+      await sleep(5000);  // ##################### doesnt work
       //then re-enable buttons
       console.log(score);
 }
 
-const countdown = (clear) => {
+const countdown = (quizset, questionCounter) => {
   
       let timeLeft = 20;
       timerElement.innerText = timeLeft;
 
-      const timerID = setInterval(
+      timerID = setInterval(
         () => {
           timeLeft--;
           timerElement.innerText = timeLeft;
 
           if (timeLeft <= 0) {
-            clearInterval(timerID); //stops firing with the parameter of who will stop firing
-           // removeListeners(); //not sure why this is
-            return false //not really doing anything
+            processAnswer(false)
+            questionCounter++
+            doNextQuestion (quizset, questionCounter)
           }
         }, //close setInter function
 
         1000, ); //close setInterval ()
 
-    if (clear) clearInterval(timerID)
 
     }
 

@@ -20,6 +20,7 @@ $text-colour: whitesmoke;
 
 html {
  font-family: sans-serif;
+ //background-color: $background-color;
 }
 
 nav {
@@ -48,7 +49,6 @@ nav {
     height: 30vh; 
     justify-content: center;
     align-items: center;
-
     border: 1px solid coral;
 }
 
@@ -61,7 +61,6 @@ h2 {
 .difficultyGrid {
     display: flex;
     flex-direction: column;
-    border: 1px solid lime;
 }
 
 .optionsGrid {
@@ -70,7 +69,7 @@ h2 {
     
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    border: 2px solid cyan;
+
 
     @include mobile {
         grid-template-columns: repeat(2,1fr); //tb checked
