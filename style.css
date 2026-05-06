@@ -8,6 +8,18 @@ nav {
   align-items: center;
 }
 
+.refreshBtn {
+  width: 40px;
+}
+
+.timer {
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
+
 #q-section {
   display: flex;
   height: 30vh;

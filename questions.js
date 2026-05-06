@@ -1,76 +1,169 @@
-//correct answer is always questions.answer[0]
-// or question[1] or question[1][0]
 
-
-// for i in    questions.length 
-//     questions[i]
-
-
-    
 export const easy = [
     
-    ["how many pillars of Islam are there?",
-    '5', '6', '1', '3'],
+    {   question: "how many pillars of Islam are there?",
+        answer: "5",
+        choices: ["6", "1", "5", "3"]
+    },
+
+    {   question: "What percentage is the zakat tax?",
+        answer: "2.5%",
+        choices: ["4%", "2.5%", "0.4%", "5%"]
+    },
+   
+    {    question: "How many pillars of imaan (faith) are there?",
+        answer: "6",
+        choices: ["1", "3", "6", "5"]
+    },
     
-    ['What percentage is the zakat tax?', '2.5%' , '4%', '5%', '0.4%' ],
+    {   question: "Who is the final messenger of God?",
+        answer: "Muhammad",
+        choices: ["Ali", "Moses", "Muhammad", "Jibril"]
+    },
     
-    ['How many pillars of imaan (faith) are there?', '6', '1', '5', '3' ],
-
-    ['Who is the final messenger of God?', 'Muhammad', 'Moses', 'Ali', 'Jibril'],
-
-    ['What is the holy book of Islam?', 'Quran', 'Torah', 'Bible', 'Muslim'],
+    {   question: "What is the holy book of Islam?",
+        answer: "Quran",
+        choices: ["Bible", "Muslim", "Quran", "Torah"]
+    },
     
-    ['What is the name of the holy city Muslims face during prayer?', 'Mecca', 'Medina', 'Jerusalem', 'Cairo'],
+    {   question: "What is the name of the holy city Muslims face during prayer?",
+        answer: "Mecca",
+        choices: ["Jerusalem", "Cairo", "Mecca", "Medina"]
+    },
+    
+    {   question: "Which city is the birthplace of the Prophet Muhammad ﷺ?",
+        answer: "Mecca",
+        choices: ["Medina", "Mecca", "Cairo", "Jerusalem"]
+    },
+    
+    {   question: "How many surahs are in the Quran?",
+        answer: "114",
+        choices: ["99", "114", "120", "100"]
+    },
+    
+    {    question: "What is the fasting month in Islam called?",
+        answer: "Ramadan",
+        choices: ["Eid", "Shawwal", "Ramadan", "Hajj"]
+    },
 
-    ['Which city is the birthplace of the Prophet Muhammad ﷺ?', 'Mecca', 'Medina', 'Jerusalem', 'Cairo'],
+    {   question: "What is the first surah of the Quran?",
+        answer: "Al-Fatiha",
+        choices: ["Al-Alaq", "An-Nas", "Al-Fatiha", "Al-Baqarah"]
+    },
 
-    ['How many surahs are in the Quran?', '114', '100', '120', '99'],
-
-    ['What is the fasting month in Islam called?', 'Ramadan', 'Hajj', 'Eid', 'Shawwal']
-
-
+    {   question: "What is the declaration of faith in Islam called?",
+    answer: "Shahada",
+    choices: ["Salah", "Zakat", "Shahada", "Hajj"]
+    }
 
 ]
 
-
 export const medium = [
+    
+    {   question: "What is the term for abrogation in Islamic jurisprudence?",
+    answer: "Naskh",
+    choices: ["Ijma", "Qiyaas", "Naskh", "Ijtihad"]
+    },
+    
+    
+    {   question: "What is the name of the cave where the first revelation was received?",
+        answer: "Hira",
+        choices: ["Cave Safa", "Hira", "Cave Uhud", "Cave Thawr"]
+    },
 
+    
+    {   question: "Which angel is responsible for delivering revelation?",
+        answer: "Angel Jibreel",
+        choices: ["Angel Malik", "Angel Jibreel", "Angel Israfeel", "Angel Mikaeel"]
+    },
 
-['What is the name of the cave where the first revelation was received?', 'Hira', 'Cave Thawr', 'Cave Uhud', 'Cave Safa'],
+    {   question: "What is the first surah revealed?",
+        answer: "Al-Alaq",
+        choices: ["Al-Alaq", "An-Mudathir", "Al-Fatiha", "Al-Baqarah"]
+    },
 
-['Which angel is responsible for delivering revelation?', 'Angel Jibreel', 'Angel Mikaeel', 'Angel Israfeel', 'Angel Malik'],
+    {
+        question: "What is the night called when the Quran was first revealed?",
+        answer: "Laylat al-Qadr",
+        choices: ["Laylat al-Jumuah", "Laylat al-Qadr", "Laylat al-Miraj", "Laylat al-Baraah"]
+    },
+    
+    {   question: "Who was the first caliph after the Prophet ﷺ?",
+        answer: "Abu Bakr",
+        choices: ["Ali", "Umar", "Abu Bakr", "Uthman"]
+    },
 
-['What is the first surah of the Quran?', 'Al-Fatiha', 'Al-Baqarah', 'Al-Alaq', 'An-Nas'],
-
-['What is the night called when the Quran was first revealed?', 'Laylat al-Qadr', 'Laylat al-Miraj', 'Laylat al-Baraah', 'Laylat al-Jumuah'],
-
-['Who was the first caliph after the Prophet ﷺ?', 'Abu Bakr', 'Umar', 'Uthman', 'Ali'],
-
-['What is the term for the migration of the Prophet ﷺ from Mecca to Medina?', 'Hijrah', 'Jihad', 'Umrah', 'Dawah'],
-
-['What is the name of the well located near the Kaaba?', 'Zamzam', 'Barakah', 'Salsabil', 'Kawthar']
-
-
+    {
+        question: "What is the term for the migration of the Prophet ﷺ from Mecca to Medina?",
+        answer: "Hijrah",
+        choices: ["Umrah", "Hijrah", "Jihad", "Dawah"]
+    },
+    {
+        question: "What is the name of the well located near the Kaaba?",
+        answer: "Zamzam",
+        choices: ["Kawthar", "Barakah", "Zamzam", "Salsabil"]
+    }
 ]
 
 export const hard = [
-['Which prophet is known as Khalilullah (Friend of Allah)?', 'Ibrahim', 'Musa', 'Isa', 'Nuh'], 
+    {
+        question: "Which prophet is known as Khalilullah (Friend of Allah)?",
+        answer: "Ibrahim",
+        choices: ["Musa", "Ibrahim", "Nuh", "Isa"]
+    },
+    {
+        question: "Which companion compiled the Quran into one manuscript during Abu Bakrs time?",
+        answer: "Zayd ibn Thabit",
+        choices: ["Uthman RA", "Zayd ibn Thabit", "Ubayy ibn Kaab", "Abdullah ibn Masud"]
+    },
+    {
+        question: "What is the term for a hadith reported by many narrators at every Tabaqah?",
+        answer: "Mutawatir",
+        choices: ["Mursal", "Ahad", "Mutawatir", "Daif"]
+    },
+    {
+        question: "Which surah does not begin with Bismillah?",
+        answer: "At-Tawbah",
+        choices: ["Yasin", "Al-Mulk", "At-Tawbah", "Al-Anfal"]
+    },
+    {
+        question: "Who was the first martyr in Islam?",
+        answer: "Sumayyah bint Khayyat",
+        choices: ["Bilal ibn Rabah", "Sumayyah bint Khayyat", "Musab ibn Umayr", "Hamzah ibn Abdul Muttalib"]
+    },
+    
+    {   question: "What is the ruling of Witr prayer according to the Hanafi madhab?",
+        answer: "Wajib",
+        choices: ["Fard", "Mustahabb", "Wajib", "Sunnah"]
+    },
 
-['Which companion compiled the Quran into one manuscript during Abu Bakrs time?', 'Zayd ibn Thabit', 'Abdullah ibn Masud', 'Uthman RA', 'Ubayy ibn Kaab']
+    {   question: "What is the ruling of Witr prayer according to the Hanbani madhab?",
+        answer: "Sunnah",
+        choices: ["Fard", "Mustahabb", "Wajib", "Sunnah"]
+    },
 
-['What is the term for a hadith reported by many narrators at every Tabaqah?', 'Mutawatir', 'Ahad', 'Daif', 'Mursal'],
+    {
+        question: "Which battle was also known as the Battle of the Criterion (Furqan)?",
+        answer: "Badr",
+        choices: ["Hunayn", "Badr", "Khandaq", "Uhud"]
+    },
 
-['Which surah does not begin with Bismillah?', 'At-Tawbah', 'Al-Anfal', 'Yasin', 'Al-Mulk'],
+    {   question: "Who was the teacher of Imam Abu Hanifa in fiqh?",
+        answer: "Hammad ibn Abi Sulayman",
+        choices: ["Ibrahim al-Nakhai", "Hammad ibn Abi Sulayman", "Ibn Mas3ud", "Nafi` Mawla ibn Umar"]
+    },
 
-['Who was the first martyr in Islam?', 'Sumayyah bint Khayyat', 'Hamzah ibn Abdul Muttalib', 'Musab ibn Umayr', 'Bilal ibn Rabah'],
-
-['What is the ruling of Witr prayer according to the Hanafi madhab?', 'Wajib', 'Sunnah', 'Fard', 'Mustahabb'],
-
-['Which battle was also known as the Battle of the Criterion (Furqan)?', 'Badr', 'Uhud', 'Khandaq', 'Hunayn'],
-
-['Who was the teacher of Imam Abu Hanifa in fiqh?', 'Hammad ibn Abi Sulayman', 'Ibn Mas3ud', ' Nafi` Mawla ibn Umar', 'Ibrahim al-Nakhai']
+    {   question: "Which madhab diffrenciates fardh and waajib?",
+        answer: "Hanafi",
+        choices: ["Hnabali", "Hanafi", "All 4", "Maliki and Shafi3i"]
+    },
 
 
 ]
+
+// e.target.value or innerText === question.answer 
+
+
+
 
 

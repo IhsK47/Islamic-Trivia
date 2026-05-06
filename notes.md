@@ -8,9 +8,7 @@ To Do
 
 - fix nav to be inline?
 - get colours
-
-- use toggle for diff to questions
-
+- use toggle for diff to questions 
 
 
 Reqs:
@@ -32,7 +30,6 @@ added questions and shuffling
 next:
 questions array
 
-
 next: 
 correct checker and score tracker
 
@@ -47,8 +44,34 @@ next^2:
 html nav
 
 
+next:
+timer
 
 
+what if:
+
+mainquiz()
+
+
+render (nextQ)
+
+eventlisteners (click, 
+    choicing here
+    render (nextQ, true or false)
+)
+ 
+
+render
+- update score accordingly
+- render q and a
+- shuffle a
+
+
+Problems: 
+- diff display
+- grid vs button 
+
+- colors are zero
 
 
 questions:
