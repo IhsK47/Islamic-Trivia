@@ -5,9 +5,7 @@ const diffGrid = document.querySelector(".difficultyGrid");
 const options = document.querySelectorAll(".option");
 const questionBox = document.querySelector(".question");
 const timerElement = document.querySelector(".timer");
-
 const qCount = document.querySelector(".qTrack");
-
 
 let score = 0;
 let level;
@@ -132,13 +130,12 @@ const waitForAnswer = (currentQ) => {
 const processAnswer = async (isCorrect, clickedElem) => {
   console.log("Processing ans...");
   //async allows rest to continue and come back to sleep
-  console.log(clickedElem); //returns fine
-  
+  qCount.innerHTML = `${questionCounter}/7 `
   
   if (isCorrect) {
     clickedElem.classList.add(".green"); //no work
     score++; //or score =+ 1
-    qCount.innerHTML = `${questionCounter}/7 `
+    
 
   } else {
     //i.e wrong ans or timer ran out

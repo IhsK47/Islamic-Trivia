@@ -23,7 +23,7 @@ nav {
 
 #q-section {
   display: flex;
-  height: 30vh;
+  height: 25vh;
   padding: 22px;
   justify-content: center;
   align-items: center;
@@ -37,10 +37,11 @@ h2 {
 .difficultyGrid {
   display: flex;
   flex-direction: column;
+  height: 100vw;
 }
 
 .optionsGrid {
-  height: 50vh;
+  height: 40vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }

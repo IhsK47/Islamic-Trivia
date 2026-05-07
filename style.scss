@@ -47,7 +47,7 @@ nav {      //#########clearly not working
 
 #q-section {
     display: flex;
-    height: 30vh; 
+    height: 25vh; //###needs tweaking upon nav fix
     padding: 22px;
     justify-content: center;
     align-items: center;
@@ -62,11 +62,11 @@ h2 {
 .difficultyGrid {
     display: flex;
     flex-direction: column;
+    height: 100vw; //###needs tweaking upon nav fix
 }
 
 .optionsGrid {
-    height: 50vh;
-
+    height: 40vh;   //###needs tweaking upon nav fix
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
