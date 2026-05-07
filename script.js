@@ -6,6 +6,9 @@ const options = document.querySelectorAll(".option");
 const questionBox = document.querySelector(".question");
 const timerElement = document.querySelector(".timer");
 
+const qCount = document.querySelector(".qTrack");
+
+
 let score = 0;
 let level;
 let choice;
@@ -135,6 +138,8 @@ const processAnswer = async (isCorrect, clickedElem) => {
   if (isCorrect) {
     clickedElem.classList.add(".green"); //no work
     score++; //or score =+ 1
+    qCount.innerHTML = `${questionCounter}/7 `
+
   } else {
     //i.e wrong ans or timer ran out
     // render button red
