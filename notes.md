@@ -79,11 +79,11 @@ ez
 - 
 
 
-m
+
 - name of eid after ramadan
 - how many yrs was madinan phase 10, 13, 8, 5
 
-h
+
 
 - which riwayah do we read from?
 - which is the correct aqeedah bahahahha
@@ -91,5 +91,5 @@ h
 - what was the three mentioned in hadith jibril
 
 
-- jannah without a single prayer, usayrim
+- who entered jannah without a single prayer
 - what yr conquest of makkah

@@ -1,11 +1,12 @@
 html {
   font-family: sans-serif;
+  background-color: #FFD100;
 }
 
 nav {
-  display: inline;
-  justify-content: end;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .refreshBtn {
@@ -23,9 +24,10 @@ nav {
 #q-section {
   display: flex;
   height: 30vh;
+  padding: 22px;
   justify-content: center;
   align-items: center;
-  border: 1px solid coral;
+  border: 3px solid #95969A;
 }
 
 h2 {
@@ -59,10 +61,20 @@ h2 {
 
 .grids button {
   margin: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .option {
   border-radius: 5%;
   max-width: 40vw;
+  background-color: #FFEE32;
+  border: 1.5px #95969A;
+}
+
+.correct {
+  background-color: lawngreen;
+}
+
+.wrong {
+  background-color: red;
 }

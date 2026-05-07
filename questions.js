@@ -20,6 +20,11 @@ export const easy = [
         answer: "Muhammad",
         choices: ["Ali", "Moses", "Muhammad", "Jibril"]
     },
+
+    {   question: "What were the three subjects mentioned in Hadith Jibril?",
+        answer: "Islam, Iman and Ihsan",
+        choices: ["Tawhid, Salah and Zakah", "Islam, Iman and Ihsan", "Quran, Sunnah and Hadith", "Salah, Sawm and Hajj"]
+    },
     
     {   question: "What is the holy book of Islam?",
         answer: "Quran",
@@ -52,26 +57,139 @@ export const easy = [
     },
 
     {   question: "What is the declaration of faith in Islam called?",
-    answer: "Shahada",
-    choices: ["Salah", "Zakat", "Shahada", "Hajj"]
-    }
+        answer: "Shahada",
+        choices: ["Salah", "Zakat", "Shahada", "Hajj"]
+    },
+
+    {   question: "What is the name of the Eid celebrated after Ramadan?",
+        answer: "al-Fitr",
+        choices: ["al-Adha", "al-Qadr", "al-Fitr", "Ashura"]
+    },
+
+    {   question: "What is the name of the Eid celebrated after Hajj?",
+        answer: "al-Adha",
+        choices: ["al-Adha", "al-Qadr", "al-Fitr", "Ashura"]
+    },
+
+    {   question: "Which prophet swallowed by a whale?",
+        answer: "Yunus",
+        choices: ["Yusuf", "Yunus", "Hud", "Saleh"]
+    },
+
+    {   question: "What is the longest surah in the Quran?",
+        answer: "Al-Baqarah",
+        choices: ["Yasin", "An-Nisa", "Al-Baqarah", "Al-Imran"]
+    },
+
+    {   question: "What language was the Quran revealed in?",
+        answer: "Arabic",
+        choices: ["Hebrew", "Persian", "Arabic", "Latin"]
+    },
+
+    {   question: "What is the name of the Prophet Muhammad ﷺ father?",
+        answer: "Abdullah",
+        choices: ["Talib", "Abu Talib", "Abdullah", "Harith"]
+    },
+
+{   question: "What is the name of the mosque in فلسطين (Palestine) mentioned in the Isra and Miraj?",
+    answer: "Al-Aqsa Mosque",
+    choices: ["Quba Mosque", "Masjid an-Nabawi", "Al-Aqsa Mosque", "Masjid al-Haram"]
+},
+
+{   question: "How many months are in the Islamic calendar?",
+    answer: "12",
+    choices: ["10", "12", "13", "7"]
+},
+
+{   question: "Who built the ark in Islam?",
+    answer: "Nuh (Noah)",
+    choices: ["Ibrahim (Abraham)", "Nuh (Noah)", "Musa (Moses)", "Yusuf (Joseph)"]
+},
+
+
+{   question: "Prophet Hud (Eber) was sent to which people?",
+    answer: "Ad",
+    choices: ["Thamud", "Ad", "Madyan", "Bani Israel"]
+},
+
+{   question: "Who was the brother of Prophet Musa (Moses)?",
+    answer: "Harun (Aaron)",
+    choices: ["Yusuf (Joseph)", "Harun (Aaron)", "Lut (Lot)", "Isa (Jesus)"]
+},
+
+{   question: "What is the greeting Muslims commonly say to each other?",
+    answer: "Assalamu Alaikum",
+    choices: ["Bismillah", "Allahu Akbar", "Assalamu Alaikum", "Alhamdulillah"]
+},
+
+{   question: "Which city contains the Kaaba?",
+    answer: "Mecca",
+    choices: ["Jerusalem", "Medina", "Cairo", "Mecca"]
+}
+
 
 ]
 
 export const medium = [
     
+{   question: "Prophet Salih was sent to which people?",
+    answer: "Thamud",
+    choices: ["Ad", "Quraysh", "Thamud", "Madyan"]
+},
+
+{   question: "How many verses (ayaat) are in the Quran according to the most common count?",
+    answer: "6236",
+    choices: ["6666", "6200", "6236", "7000"]
+},
+
+
+    {   question: "Who was the famous student of Ibn Taymiyyah?",
+    answer: "Ibn al-Qayyim",
+    choices: ["Imam Nawawi", "Ibn Kathir", "Ibn al-Qayyim", "Al-Ghazali"]
+},
+
+{   question: "Who wrote the book Diseases of the Hearts?",
+    answer: "Ibn al-Qayyim",
+    choices: ["Ibn al-Qayyim", "Imam Bukhari", "Al-Tabari", "Imam Ahmad"]
+},
+
+{   question: "What is the term used for the generation after the Sahabah?",
+    answer: "Tabiun",
+    choices: ["Muhajirun", "Ansar", "Tabiun", "Salaf"]
+},
+
+{   question: "Which famous scholar compiled the book Riyad as-Salihin?",
+    answer: "Imam Nawawi",
+    choices: ["Imam Malik", "Imam Nawawi", "Ibn Taymiyyah", "Imam Abu Hanifa"]
+},
+
+
     {   question: "What is the term for abrogation in Islamic jurisprudence?",
-    answer: "Naskh",
-    choices: ["Ijma", "Qiyaas", "Naskh", "Ijtihad"]
+        answer: "Naskh",
+        choices: ["Ijma", "Qiyaas", "Naskh", "Ijtihad"]
     },
     
-    
+    {   question: "Which companion was the first muadhin in Islam?",
+        answer: "Bilal ibn Rabah",
+        choices: ["Abu Hurairah", "Bilal ibn Rabah", "Khalid ibn al-Walid", "Salman al-Farsi"]
+    },
+
+    {   question: "What is the Islamic term for monotheism?",
+        answer: "Tawheed",
+        choices: ["Shirk", "Tafsir", "Tawheed", "Fiqh"]
+    },
+
+
     {   question: "What is the name of the cave where the first revelation was received?",
         answer: "Hira",
         choices: ["Cave Safa", "Hira", "Cave Uhud", "Cave Thawr"]
     },
 
-    
+    {   question: "Which month comes after Ramadan in the Islamic calendar?",
+    answer: "Shawwal",
+    choices: ["Muharram", "Shawwal", "Rajab", "Safar"]
+    },
+
     {   question: "Which angel is responsible for delivering revelation?",
         answer: "Angel Jibreel",
         choices: ["Angel Malik", "Angel Jibreel", "Angel Israfeel", "Angel Mikaeel"]
@@ -98,49 +216,101 @@ export const medium = [
         answer: "Hijrah",
         choices: ["Umrah", "Hijrah", "Jihad", "Dawah"]
     },
+
     {
         question: "What is the name of the well located near the Kaaba?",
         answer: "Zamzam",
         choices: ["Kawthar", "Barakah", "Zamzam", "Salsabil"]
-    }
-]
+    },
 
-export const hard = [
-    {
-        question: "Which prophet is known as Khalilullah (Friend of Allah)?",
+    {   question: "How many years did the Madinan phase last?",
+        answer: "10",
+        choices: ["13", "8", "5", "10"]
+    },
+
+    {   question: "How much is Zakat al-Fitr traditionally measured as?",
+        answer: "One sa of food",
+        choices: ["Half a dinar", "One sa of food", "2.5% of wealth", "Ten dirhams"]
+    },
+
+    {   question: "Which battle did the Muslims dig a trench in?",
+        answer: "Khandaq",
+        choices: ["Hunayn", "Uhud", "Khandaq", "Badr"]
+    },
+
+    {   question: "Which scholar was known as Shaykh al-Islam?",
+    answer: "Ibn Taymiyyah",
+    choices: ["Imam Raazi", "Ibn Taymiyyah", "Imam Shafi'i", "Al-Ghazali"]
+},
+
+{   question: "How many famous qiraat are there?",
+    answer: "10",
+    choices: ["7", "14", "10", "20"]
+},
+
+    {   question: "How many famous riwayat are commonly studied from the qiraat?",
+        answer: "20",
+        choices: ["10", "14", "20", "7"]
+    },
+
+    {   question: "Which prophet is known as Khalil al-Allah?",
         answer: "Ibrahim",
         choices: ["Musa", "Ibrahim", "Nuh", "Isa"]
     },
+
+    {   question: "Which riwayah is most commonly recited in Quran recitation today?",
+        answer: "Hafs an Asim",
+        choices: ["Warsh an Nafi", "Qalun an Nafi", "Hafs an Asim", "Shubah an Asim"]
+    },
+
+]
+
+export const hard = [
+    
+    {   question: "Which wife of the Prophet ﷺ was known as the Mother of the Poor?",
+    answer: "Zaynab bint Khuzaymah",
+    choices: ["Sawdah bint Zamah", "Aishah bint Abi Bakr", "Hafsah bint Umar", "Zaynab bint Khuzaymah"]
+    },
+
+
+    {   question: "Which sahabi was known as tarjuman al-Quran, wa hibr al-Ummah?",
+        answer: "Ibn Abbas",
+        choices: ["Ibn Umar", "Abu Hurairah", "Ibn Abbas", "Muadh ibn Jabal"]
+    },
+
+
     {
         question: "Which companion compiled the Quran into one manuscript during Abu Bakrs time?",
         answer: "Zayd ibn Thabit",
         choices: ["Uthman RA", "Zayd ibn Thabit", "Ubayy ibn Kaab", "Abdullah ibn Masud"]
     },
-    {
-        question: "What is the term for a hadith reported by many narrators at every Tabaqah?",
-        answer: "Mutawatir",
-        choices: ["Mursal", "Ahad", "Mutawatir", "Daif"]
+
+    {   question: "What is the term for a hadith reported by many narrators at every Tabaqah?",
+        answer: "متواتر",
+        choices: ["مرسل", "آحاد", "متواتر", "ضعيف"]
     },
+
     {
         question: "Which surah does not begin with Bismillah?",
         answer: "At-Tawbah",
         choices: ["Yasin", "Al-Mulk", "At-Tawbah", "Al-Anfal"]
     },
+
     {
         question: "Who was the first martyr in Islam?",
         answer: "Sumayyah bint Khayyat",
         choices: ["Bilal ibn Rabah", "Sumayyah bint Khayyat", "Musab ibn Umayr", "Hamzah ibn Abdul Muttalib"]
     },
     
-    {   question: "What is the ruling of Witr prayer according to the Hanafi madhab?",
-        answer: "Wajib",
-        choices: ["Fard", "Mustahabb", "Wajib", "Sunnah"]
-    },
+{   question: "ما حكم الوتر عند الأحناف؟",
+    answer: "واجب",
+    choices: ["فرض", "مستحب", "واجب", "سنة"]
+},
 
-    {   question: "What is the ruling of Witr prayer according to the Hanbani madhab?",
-        answer: "Sunnah",
-        choices: ["Fard", "Mustahabb", "Wajib", "Sunnah"]
-    },
+{   question: "ما هو حكم الوتر عند الحنابلة؟",
+    answer: "سنة",
+    choices: ["فرض", "مستحب", "واجب", "سنة"]
+},
 
     {
         question: "Which battle was also known as the Battle of the Criterion (Furqan)?",
@@ -158,6 +328,82 @@ export const hard = [
         choices: ["Hnabali", "Hanafi", "All 4", "Maliki and Shafi3i"]
     },
 
+    {   question: "Which companion entered Jannah without performing a single prayer?",
+        answer: "Al-Usayrim",
+        choices: ["Abu Sufyan", "Abu Dujanah", "Al-Usayrim", "Talhah ibn Ubaydullah"]
+    },
+
+    {   question: "In which year did the conquest of Makkah take place?",
+        answer: "8 AH",
+        choices: ["10 AH", "13 AH", "5 AH", "8 AH"]
+    },
+
+    {   question: "What were the three subjects mentioned in Hadith Jibril?",
+        answer: "Islam, Iman and Ihsan",
+        choices: ["Allah, Tawhid and Imaan", "Islam, Iman and Ihsan", "Quran, Sunnah and Hadith", "Iqbal, Imran and Ihsan"]
+    },
+
+    {   question: "Who wrote the book Ihya Ulum al-Din?",
+    answer: "Imam al-Ghazali",
+    choices: ["Imam Malik", "Imam al-Ghazali", "Imam Shafi'i", "Ibn Hazm"]
+},
+
+
+{   question: "Which Tabi'i was known for his deep knowledge of dream interpretation?",
+    answer: "Ibn Sirin",
+    choices: ["Hasan al-Basri", "Saeed ibn al-Musayyib", "Ibn Sirin", "Ata ibn Abi Rabah"]
+},
+
+{   question: "Which Islamic empire conquered Constantinople in 1453?",
+    answer: "Ottoman Empire",
+    choices: ["Abbasid Empire", "Umayyad Empire", "Ottoman Empire", "Fatimid Empire"]
+},
+
+{   question: "Which young Ottoman sultan conquered Constantinople?",
+    answer: "Muhammad al-Fatih",
+    choices: ["Sulayman al-Qanuni", "Selim I", "Muhammad al-Fatih", "Abdul Hamid II"]
+},
+
+{   question: "Which Muslim ruler defeated the Mongols at the Battle of عين جالوت?",
+    answer: "Qutuz",
+    choices: ["Baybars", "Qutuz", "Nur ad-Din Zangi", "Salahuddin al-Ayyubi"]
+},
+
+{   question: "Who was the first Umayyad caliph?",
+    answer: "Muawiyah ibn Abi Sufyan",
+    choices: ["Abd al-Malik", "Muawiyah ibn Abi Sufyan", "Yazid ibn Muawiyah", "Marwan ibn al-Hakam"]
+},
+
+{   question: "Which riwayah is famously recited in many parts of North and West Africa?",
+    answer: "Warsh an Nafi",
+    choices: ["Hafs an Asim", "Khalaf an Hamzah", "Warsh an Nafi", "As-Susi an Abi Amr"]
+},
+
+{   question: "What is the famous poem that summarises the seven qiraat called?",
+    answer: "Ash-Shatibiyah",
+    choices: ["Al-Jazariyyah", "Ash-Shatibiyah", "Tuhfat al-Atfal", "Muqaddimah al-Jazari"]
+},
+
+{   question: "According to the Shafi'i madhab, what is another commonly used name for Salat al-Fajr?",
+    answer: "الصبح",
+    choices: ["الإشراق", "القيام", "الصبح", "الأوابين"]
+}, 
+
+{   question: "Which riwayah reads Malik Yawmid-Din in Surah al-Fatihah without an alif?",
+    answer: "شعبة عن عاصم",
+    choices: ["حفص عن عاصم", "ورش عن نافع", "شعبة عن عاصم", "قالون عن نافع"]
+},
+
+{   question: "In حفص عن عاصم, where does the famous one-time imalah occur in the Quran?",
+    answer: "مجرىها في هود",
+    choices: ["موسى في طه", "مجرىها في هود", "الدنيا في البقرة", "عيسى في مريم"]
+},
+
+
+{   question: "In حفص عن عاصم, which word in Surah Yusuf contains the famous example of ishmam?",
+    answer: "تأمنا",
+    choices: ["تأمنا", "مجرىها", "مَالِك", "نُدْخِلْهُ"]
+}
 
 ]
 

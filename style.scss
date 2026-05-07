@@ -2,8 +2,13 @@ $mobile: 320px;  //how to typically determine this?
 $desktop: 1080px;
 
 
-$background-color: rgb(255,214,10);
 $text-colour: whitesmoke;
+
+$dark-gold: #FFD100;
+$light-gold: #FFEE32;
+$dark-something: #333533;
+$grey-mid: #95969A;
+//$-: #;
 
 
 @mixin mobile {
@@ -17,23 +22,20 @@ $text-colour: whitesmoke;
     
 }
 
-
 html {
  font-family: sans-serif;
- //background-color: $background-color;
+ background-color: $dark-gold;
 }
 
-nav {
-    display: inline;
-    justify-content: end;
+nav {  //#########clearly not working
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
 
 .refreshBtn {
     width: 40px;
 }
-
 
 .timer {
     width: 40px;
@@ -43,20 +45,19 @@ nav {
     text-align: center;
 }
 
-
 #q-section {
     display: flex;
     height: 30vh; 
+    padding: 22px;
     justify-content: center;
     align-items: center;
-    border: 1px solid coral;
+    border: 3px solid $grey-mid;
+
 }
 
 h2 {
-    text-align: center;
-    
+    text-align: center; 
 }
-
 
 .difficultyGrid {
     display: flex;
@@ -64,12 +65,10 @@ h2 {
 }
 
 .optionsGrid {
-    
     height: 50vh;
-    
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
 
     @include mobile {
         grid-template-columns: repeat(2,1fr); //tb checked
@@ -87,14 +86,25 @@ h2 {
 }
 
 .grids button {
-    
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .option {
-  border-radius: 5%; 
-  max-width: 40vw;   //needs touching up, probs media queries
+    border-radius: 5%; 
+    max-width: 40vw;   //needs touching up, probs media queries
+    
+    background-color: #FFEE32;
+
+    //border: 1.5px solid $dark-something ;
+    border: 1.5px $grey-mid ;
 }
 
+.correct {
+    background-color: lawngreen;
+}
+
+.wrong {
+    background-color: red;
+}
 
