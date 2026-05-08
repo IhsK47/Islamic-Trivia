@@ -23,73 +23,39 @@ GitHub Pages
 
 Readability: var names, func/oo
 
-next commit:
-added questions and shuffling
 
 
-next:
-questions array
 
-next: 
-correct checker and score tracker
+next priority: 
+- rendering green/red
+- disabling buttons
+
+
 
 next:
 final display
 
 
-nwxt:
-refresh ()
-
 next^2:
-html nav
+scss - nav
+- grid layout: currently buttons stay left
+- responsiveness
+
 
 
 next:
-timer
+displaying the 5 second rest for users to know
 
 
-what if:
 
-mainquiz()
-
-
-render (nextQ)
-
-eventlisteners (click, 
-    choicing here
-    render (nextQ, true or false)
-)
- 
-
-render
-- update score accordingly
-- render q and a
-- shuffle a
+next commit:
+shuffling
 
 
 Problems: 
 - diff display
 - grid vs button 
 
-- colors are zero
-
-
-questions:
-ez
-- 
 
 
 
-- name of eid after ramadan
-- how many yrs was madinan phase 10, 13, 8, 5
-
-
-
-- which riwayah do we read from?
-- which is the correct aqeedah bahahahha
-- how much is zakat alfitr
-- what was the three mentioned in hadith jibril
-
-
-- who entered jannah without a single prayer
-- what yr conquest of makkah

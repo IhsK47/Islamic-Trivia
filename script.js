@@ -111,6 +111,8 @@ const render = (q) => {
   console.log(q);
   questionBox.innerText = q.question;
 
+
+
   for (let i = 0; i < choices.length; i++) {
     options[i].innerText = choices[i];
   }
@@ -130,23 +132,44 @@ const waitForAnswer = (currentQ) => {
 const processAnswer = async (isCorrect, clickedElem) => {
   console.log("Processing ans...");
   //async allows rest to continue and come back to sleep
-  qCount.innerHTML = `${questionCounter}/7 `
+  
   
   if (isCorrect) {
-    clickedElem.classList.add(".green"); //no work
+    clickedElem.classList.add("green"); 
     score++; //or score =+ 1
-    
-
   } else {
     //i.e wrong ans or timer ran out
-    // render button red
+    clickedElem.classList.add("red")
   }
+
+
   clearInterval(timerID); //stops firing with the parameter of who will stop firing
   //disable buttons or freeze whole ui
-  
+  timerElement.innerText = 'P';
   
   await sleep(3);  //works as a to-do btw
+
+  //let timeLeft = 5;
+  //timerElement.innerText = timeLeft;
+  // pause = setInterval(   // to display to user how long pause is remaining 
+  //   async () => {
+  //     if (timeLeft > 0) {
+  //     timeLeft--;
+  //     timerElement.innerText = timeLeft; }
+  //     else {
+  //       clearInterval(pause)
+  //     }
+  //   }, //close setInter function
+  //   1000,
+  // ); //close setInterval ()
+  // clearInterval(pause); //clear previous timer incase left over
+
+
   //then re-enable buttons
+
+  clickedElem.classList.remove('red','green')
+
+  qCount.innerHTML = `${questionCounter+2}/7 `
   console.log("ans processed, score is ", score);
 };
 

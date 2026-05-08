@@ -72,10 +72,10 @@ h2 {
   border: 1.5px #95969A;
 }
 
-.correct {
+.green {
   background-color: lawngreen;
 }
 
-.wrong {
+.red {
   background-color: red;
 }

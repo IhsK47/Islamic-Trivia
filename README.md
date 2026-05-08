@@ -8,27 +8,30 @@ Players can select the option they feel correct and at the end will have their s
 
 ## HTML
 
-- [] nav
-    - [] h1: barries quiz
-    - [] refresh
-- [] question
-- [] optionsGrid
-- [] optionsButton
-- []
+- [/] nav
+    - [/] h1: barries quiz
+    - [/] refresh
+    - [/] questiontracker
+    - [/] timer
+- [/] question
+- [/] optionsGrid
+- [/] optionsButton
+
 
 ## scss
 
-- [] font
-- [] question
-- [] diffGrid to disspear after selection
-- [] 
+- [/] font
+- [/] question
+- [/] diffGrid to disspear after selection
+- [] button turn green on correct
+- [] button turn red on wrong
 
 ## JS
 
-- [] create questions
-- [] export questions
-- [] import questions.js
-- [] difficulty selection
-- [] edit innerTHML on question
-- [] determine true or false and update 
-- [] calculate final score
+- [/] create questions
+- [/] export questions
+- [/] import questions.js
+- [/] difficulty selection
+- [/] edit innerTHML on question
+- [/] determine true or false and update 
+- [/] calculate final score
