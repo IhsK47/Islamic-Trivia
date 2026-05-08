@@ -25,21 +25,45 @@ Readability: var names, func/oo
 
 
 next priority: 
-- disabling buttons
+- disabling buttons: brads code lookey nice
 
 next:
 final display
 - trunc to 1/2dp for result
 - mumtaz, jayid etc
 
+css:
+fade - ahmeds
+hover - someones idk but ik how to do that anyway
+image for tab header
+
+
 next^2:
-scss - nav
+grid
 - grid layout: currently buttons stay left
 - responsiveness
 
+nav
+- flex no work
 
 next:
 displaying the 5 second rest for users to know
+
+------alleged code for that------
+  //let timeLeft = 5;
+  //timerElement.innerText = timeLeft;
+  // pause = setInterval(   // to display to user how long pause is remaining
+  //   async () => {
+  //     if (timeLeft > 0) {
+  //     timeLeft--;
+  //     timerElement.innerText = timeLeft; }
+  //     else {
+  //       clearInterval(pause)
+  //     }
+  //   }, //close setInter function
+  //   1000); //close setInterval ()
+  // clearInterval(pause); //clear previous timer incase left over
+
 
 
 next:

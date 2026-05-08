@@ -14,10 +14,13 @@ nav {
 }
 
 .timer {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border: 0.5px solid black;
   border-radius: 50%;
+  font-weight: 600;
+  font-size: 130%;
+  line-height: 45px;
   text-align: center;
 }
 

@@ -43,13 +43,12 @@ const mainquiz = (selectedLevel) => {
   let quizset = pickRandomQuestions(selectedLevel);
   let a = doNextQuestion(quizset, questionCounter);
 
-  options.forEach(
-    (option) => {
-      option.addEventListener(
+  options.forEach( 
+    (option) => { option.addEventListener(
         "click",
         async (e) => {
           let choice = e.target.innerText;
-
+          
           if (choice == a) {
             isCorrect = true;
             console.log("noice", isCorrect);
@@ -59,7 +58,6 @@ const mainquiz = (selectedLevel) => {
           }
 
           await processAnswer(isCorrect, e.target);
-
           questionCounter++;
 
           if (questionCounter < quizset.length) {
@@ -88,8 +86,6 @@ const pickRandomQuestions = (level) => {
   return questions;
 };
 
-
-
 const doNextQuestion = (quizset, questionCounter) => {
   let q = quizset[questionCounter];
   console.log("question counter: ", questionCounter);
@@ -111,65 +107,48 @@ const render = (q) => {
   console.log(q);
   questionBox.innerText = q.question;
 
-
-
   for (let i = 0; i < choices.length; i++) {
     options[i].innerText = choices[i];
   }
+
+  options.forEach((i) => (i.disabled = false)); //enable option buttons
 };
 
 const waitForAnswer = (currentQ) => {
   options.forEach((option) => {
     option.addEventListener("click", (e) => {
       let choice = e.target.innerText;
-
-       return choice === currentQ.answer ? true : false;
+      return choice === currentQ.answer ? true : false;
     });
   });
 };
 
-
 const processAnswer = async (isCorrect, clickedElem) => {
   console.log("Processing ans...");
   //async allows rest to continue and come back to sleep
-  
-  
+
+  options.forEach((i) => (i.disabled = true)); //freeze option buttons
+
   if (isCorrect) {
-    clickedElem.classList.add("green"); 
+    clickedElem.classList.add("green");
     score++; //or score =+ 1
-  } else {
+  } else if (clickedElem == false) {
+    questionBox.innerHTML = "Times up! Wait 5 seconds."
+  }
+  
+  else {
     //i.e wrong ans or timer ran out
-    clickedElem.classList.add("red")
+    clickedElem.classList.add("red");
   }
 
-
   clearInterval(timerID); //stops firing with the parameter of who will stop firing
-  //disable buttons or freeze whole ui
-  timerElement.innerText = 'P';
-  
-  await sleep(3);  //works as a to-do btw
 
-  //let timeLeft = 5;
-  //timerElement.innerText = timeLeft;
-  // pause = setInterval(   // to display to user how long pause is remaining 
-  //   async () => {
-  //     if (timeLeft > 0) {
-  //     timeLeft--;
-  //     timerElement.innerText = timeLeft; }
-  //     else {
-  //       clearInterval(pause)
-  //     }
-  //   }, //close setInter function
-  //   1000,
-  // ); //close setInterval ()
-  // clearInterval(pause); //clear previous timer incase left over
+  timerElement.innerText = "P"; //signal pause
 
+  await sleep(3); //works as a to-do btw
+  if (clickedElem) clickedElem.classList.remove("red", "green");
 
-  //then re-enable buttons
-
-  clickedElem.classList.remove('red','green')
-
-  qCount.innerHTML = `${questionCounter+2}/7 `
+  qCount.innerHTML = `${questionCounter + 2}/7 `;
   console.log("ans processed, score is ", score);
 };
 
@@ -185,7 +164,8 @@ const countdown = (quizset, questionCounter) => {
       timerElement.innerText = timeLeft;
 
       if (timeLeft <= 0) {
-        await processAnswer(false);
+        await processAnswer(false, false);
+
         questionCounter++;
         if (questionCounter < quizset.length) {
           doNextQuestion(quizset, questionCounter);
