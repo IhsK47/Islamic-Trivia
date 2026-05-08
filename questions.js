@@ -132,21 +132,31 @@ export const easy = [
 
 export const medium = [
     
-{   question: "Prophet Salih was sent to which people?",
+    {   question: "What were the three subjects mentioned in Hadith Jibril?",
+        answer: "Islam, Iman and Ihsan",
+        choices: ["Allah, Tawhid and Imaan", "Islam, Iman and Ihsan", "Quran, Sunnah and Hadith", "Iqbal, Imran and Ihsan"]
+    },
+
+    {   question: "What were the three subjects mentioned in Hadith Jibril?",
+        answer: "Islam, Iman and Ihsan",
+        choices: ["Allah, Tawhid and Imaan", "Islam, Iman and Ihsan", "Quran, Sunnah and Hadith", "Iqbal, Imran and Ihsan"]
+    },
+
+    {   question: "Prophet Salih was sent to which people?",
     answer: "Thamud",
     choices: ["Ad", "Quraysh", "Thamud", "Madyan"]
-},
+    },
 
-{   question: "How many verses (ayaat) are in the Quran according to the most common count?",
-    answer: "6236",
-    choices: ["6666", "6200", "6236", "7000"]
-},
+    {   question: "How many verses (ayaat) are in the Quran according to the most common count?",
+        answer: "6236",
+       choices: ["6666", "6200", "6236", "7000"]
+    },
 
 
     {   question: "Who was the famous student of Ibn Taymiyyah?",
     answer: "Ibn al-Qayyim",
     choices: ["Imam Nawawi", "Ibn Kathir", "Ibn al-Qayyim", "Al-Ghazali"]
-},
+    },
 
 {   question: "Who wrote the book Diseases of the Hearts?",
     answer: "Ibn al-Qayyim",
@@ -258,6 +268,12 @@ export const medium = [
         choices: ["Musa", "Ibrahim", "Nuh", "Isa"]
     },
 
+    {   question: "Which surah does not begin with Bismillah?",
+        answer: "At-Tawbah",
+        choices: ["Yasin", "Al-Mulk", "At-Tawbah", "Al-Anfal"]
+    },
+
+
     {   question: "Which riwayah is most commonly recited in Quran recitation today?",
         answer: "Hafs an Asim",
         choices: ["Warsh an Nafi", "Qalun an Nafi", "Hafs an Asim", "Shubah an Asim"]
@@ -272,12 +288,10 @@ export const hard = [
     choices: ["Sawdah bint Zamah", "Aishah bint Abi Bakr", "Hafsah bint Umar", "Zaynab bint Khuzaymah"]
     },
 
-
     {   question: "Which sahabi was known as tarjuman al-Quran, wa hibr al-Ummah?",
         answer: "Ibn Abbas",
         choices: ["Ibn Umar", "Abu Hurairah", "Ibn Abbas", "Muadh ibn Jabal"]
     },
-
 
     {
         question: "Which companion compiled the Quran into one manuscript during Abu Bakrs time?",
@@ -290,14 +304,8 @@ export const hard = [
         choices: ["مرسل", "آحاد", "متواتر", "ضعيف"]
     },
 
-    {
-        question: "Which surah does not begin with Bismillah?",
-        answer: "At-Tawbah",
-        choices: ["Yasin", "Al-Mulk", "At-Tawbah", "Al-Anfal"]
-    },
-
-    {
-        question: "Who was the first martyr in Islam?",
+   
+    {   question: "Who was the first martyr in Islam?",
         answer: "Sumayyah bint Khayyat",
         choices: ["Bilal ibn Rabah", "Sumayyah bint Khayyat", "Musab ibn Umayr", "Hamzah ibn Abdul Muttalib"]
     },
@@ -344,8 +352,8 @@ export const hard = [
     },
 
     {   question: "Who wrote the book Ihya Ulum al-Din?",
-    answer: "Imam al-Ghazali",
-    choices: ["Imam Malik", "Imam al-Ghazali", "Imam Shafi'i", "Ibn Hazm"]
+        answer: "Imam al-Ghazali",
+        choices: ["Imam Malik", "Imam al-Ghazali", "Imam Shafi'i", "Ibn Hazm"]
 },
 
 
@@ -399,17 +407,9 @@ export const hard = [
     choices: ["موسى في طه", "مجرىها في هود", "الدنيا في البقرة", "عيسى في مريم"]
 },
 
-
 {   question: "In حفص عن عاصم, which word in Surah Yusuf contains the famous example of ishmam?",
     answer: "تأمنا",
     choices: ["تأمنا", "مجرىها", "مَالِك", "نُدْخِلْهُ"]
 }
 
 ]
-
-// e.target.value or innerText === question.answer 
-
-
-
-
-

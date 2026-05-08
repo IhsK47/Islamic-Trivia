@@ -8,35 +8,35 @@ Players can select the option they feel correct and at the end will have their s
 
 ## HTML
 
-- [/] nav
-    - [/] h1: barries quiz
-    - [/] refresh
-    - [/] questiontracker
-    - [/] timer
-- [/] question
-- [/] optionsGrid
-- [/] optionsButton
+- [x] nav
+    - [x] h1: barries quiz
+    - [x] refresh
+    - [x] questiontracker
+    - [x] timer
+- [x] question
+- [x] optionsGrid
+- [x] optionsButton
 
 
 ## scss
 
-- [/] font
-- [/] question
-- [/] diffGrid to disspear after selection
-- [/] button turn green on correct
-- [/] button turn red on wrong
-- [] grid options allign correctly to middle
-- [] final display shows only score and message/grade
+- [x] font
+- [x] question
+- [x] diffGrid to disspear after selection
+- [x] button turn green on correct
+- [x] button turn red on wrong
+- [ ] grid options allign correctly to middle
+- [ ] final display shows only score and message/grade
 
 ## JS
 
-- [/] create questions
-- [/] export questions
-- [/] import questions.js
-- [/] difficulty selection
-- [/] edit innerTHML on question
-- [/] determine true or false and update 
-- [] pause between questions
-- [/] calculate final score
-- [] disabling buttons during pause
+- [x] create questions
+- [x] export questions
+- [x] import questions.js
+- [x] difficulty selection
+- [x] edit innerTHML on question
+- [x] determine true or false and update 
+- [x] pause between questions
+- [x] calculate final score
+- [x] disabling buttons during pause
 - [] reshuffle the options each reset

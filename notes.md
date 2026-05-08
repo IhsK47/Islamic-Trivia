@@ -24,7 +24,6 @@ GitHub Pages
 Readability: var names, func/oo
 
 
-
 next:
 final display
 - mumtaz, jayid etc
