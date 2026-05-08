@@ -145,7 +145,7 @@ const processAnswer = async (isCorrect, clickedElem) => {
 
   timerElement.innerText = "P"; //signal pause
 
-  await sleep(3); //works as a to-do btw
+  await sleep(2); //works as a to-do btw
   if (clickedElem) clickedElem.classList.remove("red", "green");
 
   qCount.innerHTML = `${questionCounter + 2}/7 `;
@@ -185,5 +185,6 @@ const sleep = (s) => {
 
 const displayResults = (score, total) => {
   clearInterval(timerID);
-  questionBox.innerHTML = `${score}/${total} = ${(score / total) * 100} `;
+  const percentage = (score/total).toFixed(2)
+  questionBox.innerHTML = `${score}/${total} questions right! That's ${(percentage) * 100}% `;
 };

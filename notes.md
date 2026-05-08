@@ -24,12 +24,9 @@ GitHub Pages
 Readability: var names, func/oo
 
 
-next priority: 
-- disabling buttons: brads code lookey nice
 
 next:
 final display
-- trunc to 1/2dp for result
 - mumtaz, jayid etc
 
 css:
