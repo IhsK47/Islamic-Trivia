@@ -2,8 +2,9 @@ import * as importedQuestions from "./questions.js";
 
 const diffBtns = document.querySelectorAll(".difficultyBtn");
 const diffGrid = document.querySelector(".difficultyGrid");
-const options = document.querySelectorAll(".option");
 const questionBox = document.querySelector(".question");
+
+const options = document.querySelectorAll(".option");
 const timerElement = document.querySelector(".timer");
 const qCount = document.querySelector(".qTrack");
 
@@ -27,7 +28,6 @@ const handleDifficultySelection = (choice) => {
 diffBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     //e means event, target is the events properties
-    console.log("diff clicked");
     let userChoice = e.target.innerText;
 
     level = handleDifficultySelection(userChoice);
@@ -73,7 +73,8 @@ const mainquiz = (selectedLevel) => {
 
 const pickRandomQuestions = (level) => {
   let pool = importedQuestions[level];
-
+  console.log('Current pool length: ', pool.length);
+  
   const questions = [];
 
   while (questions.length < 7) {
@@ -98,13 +99,13 @@ const doNextQuestion = (quizset, questionCounter) => {
 const render = (q) => {
   let choices = q.choices;
 
-  //   for (let i = 4; i > 1; i--) {
+  //   for (let i = choices.length; i > 1; i--) {
   //     //shuffle cards function
   //     let r = Math.trunc(Math.random() * i) + 1; //semi-colon here non-negotiable idk why bro
-  //     [q[r], q[i]] = [q[i], q[r]];
+  //     [choices[r], choies[i]] = [choices[i], choices[r]];
   //   }
 
-  console.log(q);
+
   questionBox.innerText = q.question;
 
   for (let i = 0; i < choices.length; i++) {
@@ -133,7 +134,7 @@ const processAnswer = async (isCorrect, clickedElem) => {
     clickedElem.classList.add("green");
     score++; //or score =+ 1
   } else if (clickedElem == false) {
-    questionBox.innerHTML = "Times up! Wait 5 seconds."
+    questionBox.innerHTML = "Times up! Wait for the next question."
   }
   
   else {
@@ -149,7 +150,6 @@ const processAnswer = async (isCorrect, clickedElem) => {
   if (clickedElem) clickedElem.classList.remove("red", "green");
 
   qCount.innerHTML = `${questionCounter + 2}/7 `;
-  console.log("ans processed, score is ", score);
 };
 
 const countdown = (quizset, questionCounter) => {
@@ -185,6 +185,45 @@ const sleep = (s) => {
 
 const displayResults = (score, total) => {
   clearInterval(timerID);
-  const percentage = (score/total).toFixed(2)
-  questionBox.innerHTML = `${score}/${total} questions right! That's ${(percentage) * 100}% `;
+  //options.classList.add('hidden')
+
+  timerElement.classList.add('hidden')
+  qCount.innerHTML = "Press restart and play again!"
+
+  const percentage = Math.round( (score/total) *100  )
+  let grade;
+
+  console.log(score/total);
+
+  console.log((score/total).toFixed(2)  );
+
+  console.log(percentage);
+  
+
+  switch (true) {
+    case (percentage >= 95):
+        grade = "ممتاز مرتفع (Dub - A+)";
+        break;
+    case (percentage >= 90):
+        grade = "ممتاز (Quite Exquisite - A)";
+        break;
+    case (percentage >= 80):
+        grade = "جيد جداً (Real Good - B)";
+        break;
+    case (percentage >= 70):
+        grade = "جيد (Good - C)";
+        break;
+    case (percentage >= 60):
+        grade = "مقبول (Scraped it - D)";
+        break;
+    default:
+        grade = "راسب (big L)";
+}
+
+console.log(grade);
+
+
+
+  questionBox.innerHTML = `${score}/${total} questions right, 
+  that's ${percentage}%, ${grade}! `;
 };

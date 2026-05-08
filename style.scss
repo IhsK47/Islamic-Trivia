@@ -61,7 +61,7 @@ header {      //#########clearly not working
 
 #q-section {
     display: flex;
-    height: 25vh; //###needs tweaking upon nav fix
+    height: 30vh; 
     padding: 22px;
     justify-content: center;
     align-items: center;
@@ -73,16 +73,24 @@ h2 {
     text-align: center; 
 }
 
+.grids {
+    align-items: center;
+}
+
+
 .difficultyGrid {
+    margin: 5vh;
     display: flex;
     flex-direction: column;
     height: 100vw; //###needs tweaking upon nav fix
 }
 
 .optionsGrid {
+    margin-top: 3vh;
     height: 40vh;   //###needs tweaking upon nav fix
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    //align-items: center;
 
     @include mobile {
         grid-template-columns: repeat(2,1fr); //tb checked

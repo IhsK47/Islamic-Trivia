@@ -39,8 +39,7 @@ grid
 - grid layout: currently buttons stay left
 - responsiveness
 
-nav
-- flex no work
+
 
 next:
 displaying the 5 second rest for users to know
@@ -64,8 +63,6 @@ displaying the 5 second rest for users to know
 
 next:
 shuffling
-
-
 
 
 
