@@ -24,17 +24,13 @@ GitHub Pages
 Readability: var names, func/oo
 
 
-
-
 next priority: 
-- rendering green/red
 - disabling buttons
-
-
 
 next:
 final display
-
+- trunc to 1/2dp for result
+- mumtaz, jayid etc
 
 next^2:
 scss - nav
@@ -42,19 +38,14 @@ scss - nav
 - responsiveness
 
 
-
 next:
 displaying the 5 second rest for users to know
 
 
-
-next commit:
+next:
 shuffling
 
 
-Problems: 
-- diff display
-- grid vs button 
 
 
 

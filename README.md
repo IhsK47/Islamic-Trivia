@@ -23,8 +23,10 @@ Players can select the option they feel correct and at the end will have their s
 - [/] font
 - [/] question
 - [/] diffGrid to disspear after selection
-- [] button turn green on correct
-- [] button turn red on wrong
+- [/] button turn green on correct
+- [/] button turn red on wrong
+- [] grid options allign correctly to middle
+- [] final display shows only score and message/grade
 
 ## JS
 
@@ -34,4 +36,7 @@ Players can select the option they feel correct and at the end will have their s
 - [/] difficulty selection
 - [/] edit innerTHML on question
 - [/] determine true or false and update 
+- [] pause between questions
 - [/] calculate final score
+- [] disabling buttons during pause
+- [] reshuffle the options each reset
