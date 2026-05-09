@@ -4,12 +4,6 @@ https://github.com/IhsK47/Islamic-Trivia
 inspo: https://github.com/jakealistairwood/js-quiz
 
 
-To Do
-
-- fix nav to be inline?
-- get colours
-- use toggle for diff to questions 
-
 
 Reqs:
 - JS, scss
@@ -24,24 +18,21 @@ GitHub Pages
 Readability: var names, func/oo
 
 
-next:
-final display
-- mumtaz, jayid etc
 
-css:
+>css:
 fade - ahmeds
 hover - someones idk but ik how to do that anyway
 image for tab header
 
 
-next^2:
+>next^2:
 grid
 - grid layout: currently buttons stay left
 - responsiveness
 
 
 
-next:
+>next:
 displaying the 5 second rest for users to know
 
 ------alleged code for that------
@@ -61,7 +52,7 @@ displaying the 5 second rest for users to know
 
 
 
-next:
+>next:
 shuffling
 
 

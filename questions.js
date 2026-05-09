@@ -68,6 +68,17 @@ export const easy = [
     choices: ["Ali", "Moses", "Muhammad", "Jibril"],
   },
 
+  {   question: "How many total units are there in the five daily obligatory prayers?",
+    answer: "17",
+    choices: ["4", "17", "50", "5"]
+},
+
+{   question: "Which city is home to the Prophet Muhammad ﷺ grave?",
+    answer: "Medina",
+    choices: ["Jerusalem", "Mecca", "Cairo", "Medina"]
+},
+
+
   {
     question: "What were the three subjects mentioned in Hadith Jibril?",
     answer: "Islam, Iman and Ihsan",
@@ -214,7 +225,7 @@ export const easy = [
     question: "Which city contains the Kaaba?",
     answer: "Mecca",
     choices: ["Jerusalem", "Medina", "Cairo", "Mecca"],
-  },
+  }
 ];
 
 export const medium = [
@@ -379,7 +390,17 @@ export const medium = [
     question: "How many years did the Madinan phase last?",
     answer: "10",
     choices: ["13", "8", "5", "10"],
-  },
+  },    
+
+  {   question: "What is the maximum number of rakahs that can be prayed for Witr?",
+    answer: "11",
+    choices: ["3", "5", "11", "13"]
+},
+
+{   question: "How many years did the Makkan phase last?",
+    answer: "13",
+    choices: ["10", "8", "13", "15"]
+},
 
   {
     question: "How much is Zakat al-Fitr traditionally measured as?",
@@ -501,6 +522,17 @@ export const hard = [
     answer: "Ibn Abbas",
     choices: ["Ibn Umar", "Abu Hurairah", "Ibn Abbas", "Muadh ibn Jabal"],
   },
+
+  {   question: "Who was the last companion to leave Makkah for the Hijrah AFTER the Prophet ﷺ?",
+    answer: "Ali ibn Abi Talib",
+    choices: ["Abu Bakr", "Bilal ibn Rabah", "Ali ibn Abi Talib", "Umar ibn al-Khattab"]
+},
+
+{   
+    question: "Which sahabah was selected to make hijrah from Makkah with the Prophet ﷺ, famously asking, 'In companionship, ya rasul Allah?'",
+    answer: "Abu Bakr",
+    choices: ["Ali ibn Abi Talib", "Abu Bakr", "Uthman ibn Affan", "Umar ibn al-Khattab"]
+},
 
 {   question: "What is the famous matn in tajweed written by سليمان الجمزوري called?",
     answer: "تحفة الأطفال",
@@ -737,5 +769,5 @@ export const hard = [
       "In حفص عن عاصم, which word in Surah Yusuf contains the famous example of ishmam?",
     answer: "تأمنا",
     choices: ["تأمنا", "مجرىها", "مَالِك", "نُدْخِلْهُ"],
-  },
+  }
 ];
