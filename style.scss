@@ -1,132 +1,122 @@
-$mobile: 320px;  //how to typically determine this?
+$mobile: 320px; //how to typically determine this?
 $desktop: 960px;
 
-
-$text-colour: whitesmoke;
-
-$dark-gold: #FFD100;
-$light-gold: #FFEE32;
-$dark-something: #333533;
-$grey-mid: #95969A;
-//$-: #;
-
+$dark-gold: #ffd100;
+$light-gold: #ffee32;
+$grey-mid: #95969a;
 
 @mixin mobile {
-    @media (max-width: $desktop)   { 
-        @content
-    }
+  @media (max-width: $desktop) {
+    @content;
+  }
 }
 
-
 @mixin desktop {
-    
 }
 
 html {
- font-family: sans-serif;
- background-color: $dark-gold;
+  font-family: sans-serif;
+  background-color: $dark-gold;
 }
 
-header {      //#########clearly not working
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .upperDisplay {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 180px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
 }
 
 .refreshBtn {
-    width: 50px;
+  width: 50px;
 }
 
 .timer {
-    width: 45px;
-    height: 45px;
-    border: 2px solid black;
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 130%;
-    line-height: 45px; //vertical allignment
-    text-align: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 130%;
+  line-height: 45px; //vertical allignment
+  text-align: center;
 }
 
 .qTrack {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #q-section {
-    display: flex;
-    height: 30vh; 
-    padding: 22px;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid $grey-mid;
-
+  display: flex;
+  height: 30vh;
+  padding: 22px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $grey-mid;
 }
 
 h2 {
-    text-align: center; 
+  text-align: center;
 }
 
 .grids {
-    align-items: center;
+  align-items: center;
 }
 
-
 .difficultyGrid {
-    margin: 5vh;
-    display: flex;
-    flex-direction: column;
-    height: 100vw; //###needs tweaking upon nav fix
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vw; //###needs tweaking upon nav fix
 }
 
 .optionsGrid {
-    margin-top: 3vh;
-    height: 40vh;   //###needs tweaking upon nav fix
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    //align-items: center;
+  margin-top: 3vh;
+  height: 40vh; //###needs tweaking upon nav fix
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  //align-items: center;
 
-    @include mobile {
-        grid-template-columns: repeat(2,1fr); //tb checked
-    }
-
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr); //tb checked
+  }
 }
 
-.difficultyBtn { 
-    height: 40px;
-    border-radius: 5%; //sooooo ugly
+.difficultyBtn {
+  height: 40px;
+  border: 2px solid silver;
+  background-color: beige;
+  height: 60px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .grids button {
-    margin: 10px;
-    font-size: 25px;
+  margin: 10px;
+  font-size: 25px;
 }
 
 .option {
-    border-radius: 5%; 
-    max-width: 40vw;   //needs touching up, probs media queries
-    
-    background-color: #FFEE32;
+  border-radius: 5%;
+  max-width: 40vw; //needs touching up, probs media queries
 
-    //border: 1.5px solid $dark-something ;
-    border: 1.5px $grey-mid ;
+  background-color: #ffee32;
+
+  //border: 1.5px solid $dark-something ;
+  border: 1.5px $grey-mid;
 }
 
 .green {
-    background-color: lawngreen;
+  background-color: lawngreen;
 }
 
 .red {
-    background-color: red;
+  background-color: red;
 }
-
