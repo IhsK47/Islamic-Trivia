@@ -22,7 +22,7 @@ const handleDifficultySelection = (choice) => {
     return "medium";
   } else if (choice == "Ihsan (Boss)") {
     return "hard";
-  } //could make it single line
+  }
 };
 
 diffBtns.forEach((btn) => {
@@ -36,19 +36,20 @@ diffBtns.forEach((btn) => {
     console.log("level within waitForDifficulty: ", level);
 
     mainquiz(level);
-  }); //
+  }); 
 });
 
 const mainquiz = (selectedLevel) => {
   let quizset = pickRandomQuestions(selectedLevel);
   let a = doNextQuestion(quizset, questionCounter);
 
-  options.forEach( 
-    (option) => { option.addEventListener(
+  options.forEach(
+    (option) => {
+      option.addEventListener(
         "click",
         async (e) => {
           let choice = e.target.innerText;
-          
+
           if (choice == a) {
             isCorrect = true;
             console.log("noice", isCorrect);
@@ -73,8 +74,8 @@ const mainquiz = (selectedLevel) => {
 
 const pickRandomQuestions = (level) => {
   let pool = importedQuestions[level];
-  console.log('Current pool length: ', pool.length);
-  
+  console.log("Current pool length: ", pool.length);
+
   const questions = [];
 
   while (questions.length < 7) {
@@ -105,7 +106,6 @@ const render = (q) => {
   //     [choices[r], choies[i]] = [choices[i], choices[r]];
   //   }
 
-
   questionBox.innerText = q.question;
 
   for (let i = 0; i < choices.length; i++) {
@@ -113,15 +113,6 @@ const render = (q) => {
   }
 
   options.forEach((i) => (i.disabled = false)); //enable option buttons
-};
-
-const waitForAnswer = (currentQ) => {
-  options.forEach((option) => {
-    option.addEventListener("click", (e) => {
-      let choice = e.target.innerText;
-      return choice === currentQ.answer ? true : false;
-    });
-  });
 };
 
 const processAnswer = async (isCorrect, clickedElem) => {
@@ -132,19 +123,17 @@ const processAnswer = async (isCorrect, clickedElem) => {
 
   if (isCorrect) {
     clickedElem.classList.add("green");
-    score++; //or score =+ 1
+    score++; 
   } else if (clickedElem == false) {
-    questionBox.innerHTML = "Times up! Wait for the next question."
-  }
-  
-  else {
+    questionBox.innerHTML = "Times up! Wait for the next question.";
+  } else {
     //i.e wrong ans or timer ran out
     clickedElem.classList.add("red");
   }
 
   clearInterval(timerID); //stops firing with the parameter of who will stop firing
 
-  timerElement.innerText = "P"; //signal pause
+  timerElement.innerText = "P";
 
   await sleep(2); //works as a to-do btw
   if (clickedElem) clickedElem.classList.remove("red", "green");
@@ -187,42 +176,39 @@ const displayResults = (score, total) => {
   clearInterval(timerID);
   //options.classList.add('hidden')
 
-  timerElement.classList.add('hidden')
-  qCount.innerHTML = "Press restart and play again!"
+  timerElement.classList.add("hidden");
+  qCount.innerHTML = "Press restart and play again!";
 
-  const percentage = Math.round( (score/total) *100  )
+  const percentage = Math.round((score / total) * 100);
   let grade;
 
-  console.log(score/total);
+  console.log(score / total);
 
-  console.log((score/total).toFixed(2)  );
+  console.log((score / total).toFixed(2));
 
   console.log(percentage);
-  
 
   switch (true) {
-    case (percentage >= 95):
-        grade = "ممتاز مرتفع (Dub - A+)";
-        break;
-    case (percentage >= 90):
-        grade = "ممتاز (Quite Exquisite - A)";
-        break;
-    case (percentage >= 80):
-        grade = "جيد جداً (Real Good - B)";
-        break;
-    case (percentage >= 70):
-        grade = "جيد (Good - C)";
-        break;
-    case (percentage >= 60):
-        grade = "مقبول (Scraped it - D)";
-        break;
+    case percentage >= 95:
+      grade = "ممتاز مرتفع (Dub - A+)";
+      break;
+    case percentage >= 90:
+      grade = "ممتاز (Quite Exquisite - A)";
+      break;
+    case percentage >= 80:
+      grade = "جيد جداً (Real Good - B)";
+      break;
+    case percentage >= 70:
+      grade = "جيد (Good - C)";
+      break;
+    case percentage >= 60:
+      grade = "مقبول (Scraped it - D)";
+      break;
     default:
-        grade = "راسب (big L)";
-}
+      grade = "راسب (big L)";
+  }
 
-console.log(grade);
-
-
+  console.log(grade);
 
   questionBox.innerHTML = `${score}/${total} questions right, 
   that's ${percentage}%, ${grade}! `;

@@ -26,7 +26,6 @@ Players can select the option they feel correct and at the end will have their s
 - [x] button turn green on correct
 - [x] button turn red on wrong
 - [ ] grid options allign correctly to middle
-- [ ] final display shows only score and message/grade
 
 ## JS
 
