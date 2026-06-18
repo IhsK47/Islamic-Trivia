@@ -489,8 +489,42 @@ export const medium = [
 {   question: "Which companion was known as Dhun-Nurayn (the possessor of two lights)?",
     answer: "Uthman ibn Affan",
     choices: ["Ali ibn Abi Talib", "Umar ibn al-Khattab", "Uthman ibn Affan", "Talhah ibn Ubaydullah"]
-}
+},
 
+{   question: "Which scholar authored the most famous hadith collection Arbain Nawawi?",
+    answer: "Imam Nawawi",
+    choices: ["Imam Muslim", "Imam Nawawi", "Imam Tirmidhi", "Imam Bukahri"]
+},
+
+{   question: "Which companion remained in the Prophet ﷺ bed on the night of the Hijrah?",
+    answer: "Ali ibn Abi Talib",
+    choices: ["Umar ibn al-Khattab", "Ali ibn Abi Talib", "Az-Zubayr ibn al-Awwam", "Talhah ibn Ubaydullah"]
+},
+
+{   question: "According to the famous hadith, what action should accompany sincere tawakkul?",
+    answer: "Taking the means",
+    choices: ["Leaving all planning", "Taking the means", "Avoiding work", "Relying on others"]
+},
+
+{   question: "Which companion was chosen to call the adhan because of his powerful voice?",
+    answer: "Bilal ibn Rabah",
+    choices: ["Abu Hurairah", "Bilal ibn Rabah", "Salman al-Farsi", "Ubayy ibn Kaab"]
+},
+
+{   question: "What was the first major treaty between the Muslims and Quraysh called?",
+    answer: "Hudaybiyyah",
+    choices: ["Aqabah", "Hudaybiyyah", "Tabuk", "Khaybar"]
+},
+
+{   question: "Which companion accepted Islam after hearing the opening verses of Surah Taha?",
+    answer: "Umar ibn al-Khattab",
+    choices: ["Hamzah ibn Abdul Muttalib", "Umar ibn al-Khattab", "Khalid ibn al-Walid", "Amr ibn al-As"]
+},
+
+{   question: "Which event marks the beginning of the Islamic calendar?",
+    answer: "The Hijrah",
+    choices: ["The conquest of Makkah", "The Hijrah", "The Battle of Badr", "The Farewell Hajj"]
+},
 
 ];
 
@@ -548,7 +582,6 @@ export const hard = [
     answer: "Imam Malik",
     choices: ["Imam Ahmad", "Imam Malik", "Imam Shafi'i", "Imam Abu Hanifa"]
 },
-
 
   {
     question:
@@ -769,5 +802,184 @@ export const hard = [
       "In حفص عن عاصم, which word in Surah Yusuf contains the famous example of ishmam?",
     answer: "تأمنا",
     choices: ["تأمنا", "مجرىها", "مَالِك", "نُدْخِلْهُ"],
-  }
+  },
+
+  //
+
+{   question: "Which sahabi was known as صاحب سر رسول الله ﷺ (the keeper of the Prophet's secrets)?",
+    answer: "Hudhayfah ibn al-Yaman",
+    choices: ["Abdullah ibn Masud", "Hudhayfah ibn al-Yaman", "Muadh ibn Jabal", "Abu Darda"]
+},
+
+{   question: "Which companion was instructed by the Prophet ﷺ to learn the laws of inheritance?",
+    answer: "Zayd ibn Thabit",
+    choices: ["Ali ibn Abi Talib", "Abdullah ibn Abbas", "Zayd ibn Thabit", "Ubayy ibn Kaab"]
+},
+
+{   question: "What is the term for a hadith whose chain is uninterrupted from beginning to end?",
+    answer: "متصل",
+    choices: ["مرسل", "منقطع", "متصل", "معلق"]
+},
+
+{   question: "What is the term for a hadith fabricated and falsely attributed to the Prophet ﷺ?",
+    answer: "موضوع",
+    choices: ["شاذ", "منكر", "موضوع", "ضعيف"]
+},
+
+{   question: "Which companion narrated the most hadith?",
+    answer: "Abu Hurairah",
+    choices: ["Aishah", "Abdullah Ibn Umar", "Abu Hurairah", "Anas ibn Malik"]
+},
+
+
+{   question: "Who authored the famous explanation of Sahih al-Bukhari known as فتح الباري؟",
+    answer: "Ibn Hajar al-Asqalani",
+    choices: ["Imam Nawawi", "Ibn Hajar al-Asqalani", "Al-Haytami", "As-Suyuti"]
+},
+
+
+{   question: "Which book of aqidah was written by Ibn Taymiyyah in response to a judge from Wasit?",
+    answer: "الواسطية",
+    choices: ["الحموية", "الواسطية", "التدمرية", "الطحاوية"]
+},
+
+{   question: "Which scholar authored زاد المعاد؟",
+    answer: "Ibn al-Qayyim",
+    choices: ["Ibn Rajab", "Ibn al-Qayyim", "Ibn Kathir", "Ibn Taymiyyah"]
+},
+
+{   question: "Who was the teacher of Imam al-Bukhari?",
+    answer: "Imam Ahmad Ibn Hanbal",
+    choices: ["Imam Ahmad Ibn Hanbal", "Imam Malik", "Sufyan ath-Thawri", "Imam Abu Hanifa"]
+},
+
+{   question: "Which scholar is known as أمير المؤمنين في الحديث ؟",
+    answer: "Imam al-Bukhari",
+    choices: ["Imam Muslim", "Imam al-Bukhari", "Imam Malik", "Abu Dawud"]
+},
+
+{   question: "Which famous mufassir authored جامع البيان؟",
+    answer: "Al-Tabari",
+    choices: ["Al-Qurtubi", "Al-Tabari", "Ibn Kathir", "Al-Baghawi"]
+},
+
+{   question: "Which companion was known as the leader of the Quran reciters among the Sahabah?",
+    answer: "Ubayy ibn Kaab",
+    choices: ["Zayd ibn Thabit", "Ibn Masud", "Ubayy ibn Kaab", "Abu Musa al-Ashari"]
+},
+
+{   question: "Who was appointed by Umar ibn al-Khattab to establish the Islamic calendar?",
+    answer: "Uthman ibn Affan",
+    choices: ["Ali ibn Abi Talib", "Suhayb Al-Rumi", "Uthman ibn Affan", "Talhah ibn Ubaydullah"]
+},
+
+{   question: "Which battle marked the end of the Hurub al-Ridda?",
+    answer: "Yamamah",
+    choices: ["Hunayn", "Yamamah", "Qadisiyyah", "Mu'tah"]
+},
+
+{   question: "Which companion killed Musaylimah al-Kadhdhab?",
+    answer: "Wahshi ibn Harb",
+    choices: ["Khalid ibn al-Walid", "Wahshi ibn Harb", "Abu Dujanah", "Zubayr ibn al-Awwam"]
+},
+
+{   question: "Which scholar authored the famous usul al-fiqh work الرسالة؟",
+    answer: "Imam al-Shafii",
+    choices: ["Imam Malik", "Imam Ahmad", "Imam al-Shafii", "Imam Abu Hanifa"]
+},
+
+{   question: "What is the term for the consensus of qualified scholars?",
+    answer: "إجماع",
+    choices: ["قياس", "إجماع", "استحسان", "عرف"]
+},
+
+{   question: "What is the term for analogy/extention in usul al-fiqh?",
+    answer: "قياس",
+    choices: ["إجماع", "قياس", "مصالح مرسلة", "استصحاب"]
+},
+
+
+{   question: "Which companion was sent to Yemen by the Prophet ﷺ as a judge and teacher?",
+    answer: "Muadh ibn Jabal",
+    choices: ["Ali ibn Abi Talib", "Muadh ibn Jabal", "Abu Musa al-Ashari", "Khalid ibn al-Walid"]
+},
+
+
+{   question: "Which qiraah is attributed to the Imam of Madinah?",
+    answer: "Nafi",
+    choices: ["Asim", "Nafi", "Hamzah", "Al-Kisai"]
+},
+
+{   question: "Which companion was sent to Madinah during the Makkan period to teach Islam before the Hijrah?",
+    answer: "Musab ibn Umayr",
+    choices: ["Muadh ibn Jabal", "Musab ibn Umayr", "Bilal ibn Rabah", "Abu Ubaydah ibn al-Jarrah"]
+},
+
+{   question: "Which companion was the first to unsheathe a sword in defence of Islam?",
+    answer: "Az-Zubayr ibn al-Awwam",
+    choices: ["Khalid ibn al-Walid", "Az-Zubayr ibn al-Awwam", "Ali ibn Abi Talib", "Hamzah ibn Abdul Muttalib"]
+},
+
+{   question: "Who authored the famous hadith terminology work نخبة الفكر؟",
+    answer: "Ibn Hajar al-Asqalani",
+    choices: ["An-Nawawi", "As-Suyuti", "Ibn Hajar al-Asqalani", "Ibn Salah"]
+},
+
+{   question: "What is the term for a hadith in which a Tabi'i narrates directly from the Prophet ﷺ?",
+    answer: "مرسل",
+    choices: ["متصل", "مرسل", "موقوف", "معضل"]
+},
+
+{   question: "What is the term for a narration whose chain stops at a companion?",
+    answer: "موقوف",
+    choices: ["مرفوع", "موقوف", "مقطوع", "متواتر"]
+},
+
+{   question: "Which companion returned the belongings of Quraysh wich were left with the Prophet ﷺ after he left Makkah?",
+    answer: "Ali ibn Abi Talib",
+    choices: ["Uthman ibn Affan", "Ali ibn Abi Talib", "Zubayr ibn al-Awwam", "Abu Ubaydah ibn al-Jarrah"]
+},
+
+{   question: "What is the term for a narrator concealing a weakness in the chain by narrating ambiguously from a teacher?",
+    answer: "تدليس",
+    choices: ["إرسال", "تدليس", "وقف", "اختلاط"]
+},
+
+{   question: "Which battle led to the compilation of the Quran into a single manuscript during Abu Bakr's caliphate?",
+    answer: "Yamamah",
+    choices: ["Qadisiyyah", "Yamamah", "Hunayn", "Mu'tah"]
+},
+
+{   question: "Which treaty is referred to in Surah Fath 'إنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا' as victory although initially viewed unfavourably?",
+    answer: "Hudaybiyyah",
+    choices: ["Aqabah", "Tabuk", "Hudaybiyyah", "Khaybar"]
+},
+
+{   question: "In whode khalifah was Jerusalem peacefully handed over to the Muslimin?",
+    answer: "Umar ibn al-Khattab",
+    choices: ["Abu Bakr", "Ali ibn Abi Talib", "Umar ibn al-Khattab", "Uthman ibn Affan"]
+},
+
+{   question: "Which battle is regarded as the decisive battle that broke Byzantine power in the Levant?",
+    answer: "Yarmuk",
+    choices: ["Qadisiyyah", "Mu'tah", "Yarmuk", "Nahawand"]
+},
+
+
+
 ];
+
+/*
+{   question: "According to Aqidah al-Tahawiyyah, what is increased and decreased according to Ahl al-Sunnah?",
+    answer: "Iman",
+    choices: ["Islam", "Tawakkul", "Iman", "Ikhlas"]
+},
+
+
+{   question: "What is the term for a narrator whose memory deteriorated later in life?",
+    answer: "مختلط",
+    choices: ["ثقة", "مختلط", "متروك", "صدوق"]
+},
+
+
+*/

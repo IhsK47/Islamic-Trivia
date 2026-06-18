@@ -46,7 +46,7 @@ Exit loop, display score, calc and display percentage and which questions answer
 
 
 Backend
-- questions in dictionary/2d array
+- questions in dictionary
 - select array based on difficulty
 - 7 questions for easy, 7 medium, 8 hard
 - randomise which questions, and in different order
@@ -56,7 +56,4 @@ Backend
 - need to have WAY more questions that the game gives, maybe 30 of each
 
 Maybes:
-- diff background colours for difficulty
-- dark mode or dark theme
-- hover over difficult with a message to say "li tulaab al-ilm"
 - timer, 30s ez, 20 m, 15 hard

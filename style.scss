@@ -80,11 +80,15 @@ h2 {
   height: 40vh; //###needs tweaking upon nav fix
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //align-items: center;
+  justify-content: center;
 
   @include mobile {
     grid-template-columns: repeat(2, 1fr); //tb checked
   }
+}
+
+.btn .optionsGrid {
+  width: 80%;
 }
 
 .difficultyBtn {
